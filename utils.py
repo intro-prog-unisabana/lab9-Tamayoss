@@ -1,6 +1,4 @@
 # utils.py
-
-# utils.py
 from bank_account import *
 from person import *
 def person_data():
