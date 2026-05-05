@@ -1,12 +1,15 @@
 # bank_account.py
-class Aircraft:
-    def __init__(self, model, altitude=0):
-        self.model = model
-        self.altitude = altitude
+class BankAccount:  
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance                      
+    def __str__(self):
+        return f"Account Number: {self.account_number}, Balance: {self.balance:.2f}"    
+    def deposit(self, amount):
+        self.balance += amount
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient funds")
+        else:
+            self.balance -= amount
 
-    def climb(self, feet):
-        self.altitude += feet
-
-    def descend(self, feet):
-        self.altitude -= feet
-# FREEZE CODE END

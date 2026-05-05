@@ -1,9 +1,9 @@
-from bank_account import BankAccount ##
+from bank_account import BankAccount 
 from person import Person
 from utils import *
 
 def main():
-    people = []  # List to store all Person objects
+    people = []  
 
     while True:
         # Display menu
